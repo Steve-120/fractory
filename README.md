@@ -17,6 +17,16 @@ sudo n 16
 
 To run the app, put in the SESSION_SECRET env variable, and then do `npm install` then `npm start`.
 
+## Screencaps
+
+<img width="1479" alt="Image" src="https://github.com/user-attachments/assets/2bc52611-a7ed-46d1-9b95-a2c334c1902e" />
+
+<img width="1481" alt="Image" src="https://github.com/user-attachments/assets/a41a1583-c904-4730-a27a-f60a26b58cc3" />
+
+<img width="1480" alt="Image" src="https://github.com/user-attachments/assets/61d51dcf-36b8-43db-b85a-86f9068565c5" />
+
+<img width="1477" alt="Image" src="https://github.com/user-attachments/assets/3e80c122-df55-4d78-af85-259ba50b5c7a" />
+
 ## What we provide
 
 - Google Auth (Skeleton.js & auth.js)

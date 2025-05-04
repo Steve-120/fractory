@@ -1,4 +1,21 @@
-# Project Skeleton
+# Fractory
+
+A website for creating custom fractals based on user-specified L-system rules. 
+
+## How to run
+
+Requirements:
+- npm v6.14.11
+- node v16.xx
+
+For MacOS, after installing npm and node via brew, make sure /usr/local/bin is before /opt/homebrew/bin in PATH. Then, you can run:
+```
+sudo npm install -g npm@6.14.11
+sudo npm install -g n
+sudo n 16
+```
+
+To run the app, put in the SESSION_SECRET env variable, and then do `npm install` then `npm start`.
 
 ## What we provide
 
@@ -8,7 +25,7 @@
   - Disclaimer: Socket isn't being taught until the second week.
 - User Model (auth.js & user.js)
 
-## What you need to change
+## TODO
 
 - Change the font in utilities.css
 - Change the Frontend CLIENT_ID for Google Auth (Skeleton.js) (we'll talk about it at the end of week 2)

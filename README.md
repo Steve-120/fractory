@@ -5,7 +5,6 @@ A website for creating custom fractals based on user-specified L-system rules.
 ## How to run
 
 Requirements:
-- npm v6.14.11
 - node v16.xx
 
 For MacOS, after installing npm and node via brew, make sure /usr/local/bin is before /opt/homebrew/bin in PATH. Then, you can run:
@@ -15,7 +14,9 @@ sudo npm install -g n
 sudo n 16
 ```
 
-To run the app, put in the SESSION_SECRET env variable, and then do `npm install` then `npm start`.
+To run the app locally, put in the SESSION_SECRET env variable, and then do `npm install` then `npm start`.
+
+Vercel doesn't support Node v16 anymore.
 
 ## Screencaps
 

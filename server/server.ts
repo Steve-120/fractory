@@ -13,21 +13,21 @@ dotenv.config({});
 
 // Server configuration below
 // TODO change connection URL after setting up your team database
-const mongoConnectionURL = process.env.MONGO_SRV;
+// const mongoConnectionURL = process.env.MONGO_SRV;
 // TODO change database name to the name you chose
 const databaseName = "Fractory";
 
-if (mongoConnectionURL === undefined) {
-  throw new Error("Please add the MongoDB connection SRV as 'MONGO_SRV'");
-}
-mongoose
-  .connect(mongoConnectionURL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    dbName: databaseName,
-  })
-  .then(() => console.log("Connected to MongoDB"))
-  .catch((err) => console.log(`Error connecting to MongoDB: ${err}`));
+// if (mongoConnectionURL === undefined) {
+//   throw new Error("Please add the MongoDB connection SRV as 'MONGO_SRV'");
+// }
+// mongoose
+//   .connect(mongoConnectionURL, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//     dbName: databaseName,
+//   })
+//   .then(() => console.log("Connected to MongoDB"))
+//   .catch((err) => console.log(`Error connecting to MongoDB: ${err}`));
 
 // Create a new Express server
 const app = express();

@@ -21,19 +21,22 @@ const App = () => {
   const [userId, setUserId] = useState<String>(undefined);
 
   useEffect(() => {
-    get("/api/whoami")
-      .then((user: User) => {
-        if (user._id) {
-          // They are registed in the database and currently logged in.
-          setUserId(user._id);
-        }
-      })
-      .then(() =>
-        socket.on("connect", () => {
-          post("/api/initsocket", { socketid: socket.id });
-        })
-      );
+    setUserId("localuser");
   }, []);
+  // useEffect(() => {
+  //   get("/api/whoami")
+  //     .then((user: User) => {
+  //       if (user._id) {
+  //         // They are registed in the database and currently logged in.
+  //         setUserId(user._id);
+  //       }
+  //     })
+  //     .then(() =>
+  //       socket.on("connect", () => {
+  //         post("/api/initsocket", { socketid: socket.id });
+  //       })
+  //     );
+  // }, []);
 
   const handleLogin = (res: GoogleLoginResponse) => {
     console.log(`Logged in as ${res.profileObj.name}`);
